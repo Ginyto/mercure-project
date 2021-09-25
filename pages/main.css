@@ -1,0 +1,268 @@
+.butn {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 6px;
+  border: none;
+  margin: 0px 10px;
+  border-radius:50px 50px 50px 50px;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin: 0 auto;
+  display: block;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#map { 
+  border-radius: 25px;
+  height: 500px;
+  margin-top: 20px;
+}
+
+.RGB {
+  background: linear-gradient(2deg, #5900ff, #41c3ff);
+  background-size: 400% 400%;
+  animation: AnimationName 8s ease infinite;
+}
+
+.metalic{
+  background: linear-gradient(2deg, #00000046, hsl(216, 100%, 65%));
+  background-size: 800% 800%;
+  animation: AnimationName 8s ease infinite;
+}
+
+@keyframes AnimationName {
+  0%{background-position:50% 0%}
+  50%{background-position:51% 100%}
+  100%{background-position:50% 0%}
+}
+
+.collapsible {
+  cursor: pointer;
+}
+
+.list-item{
+  border-radius: 50px;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  width: 100%;
+  border: solid transparent;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  font-family: "Verdana";
+  font-weight: bolder;
+  margin-top: 5px;
+}
+
+.list-item:hover {
+  color: white;
+  background: linear-gradient(2deg, #ff00ea, #ffb600);
+  background-size: 400% 400%;
+  animation: AnimationName 8s ease infinite;
+  border-width: 2px;
+  border: solid white;
+}
+
+.active{
+  background-color: #000000;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.content {
+  display: none;
+  overflow: hidden;
+  background: linear-gradient(2deg, #616161, #1f1e1e);
+  background-size: 400% 400%;
+  animation: AnimationName 8s ease infinite;
+}
+
+.list-content{
+  color: #ffffff;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding: 0 18px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.add{
+  background-color: transparent;
+  border: solid green;
+  border-radius: 10px;
+  border-width: 2px;
+  text-align: center;
+  color: green;
+  font-weight: bolder;
+  width: 90%;
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  display: block;
+}
+
+.game{
+  margin-bottom: 45px;
+}
+
+.block{
+  background-color: transparent;
+  border: solid white;
+  border-radius: 10px;
+  border-width: 1px;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  position: relative;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-container > div {
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+}
+
+.float{
+	position:fixed;
+	top:8%;
+	left:0px;
+}
+
+.float2{
+	position:fixed;
+	top:14%;
+	left:0px;
+}
+
+.hoverable{
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+	color:#FFF;
+	min-width:60px;
+	min-height:60px;
+  background-color: black;
+  border: solid white;
+  border-width: 4px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+  padding: 10px;
+
+}
+
+.hoverable:hover{
+  background: linear-gradient(2deg, #5900ff, #41c3ff);
+  background-size: 400% 400%;
+  animation: AnimationName 8s ease infinite;
+}
+
+.my-list{
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  max-height: 40%;
+  width: 20%;
+  text-align: center;
+  overflow: auto;
+}
+
+.my-float{
+	margin-top:22px;
+}
+
+li{
+  margin-top: 15px;
+}
+
+.li-default {
+  margin-top: 0px;
+}
+
+li:only-child {
+  display: none;
+}
+
+body {
+  font-family: Calibri, Segoe, "Segoe UI", "Gill Sans", "Gill Sans MT", sans-serif;
+}
+
+/* It's supposed to look like a tree diagram */
+.tree, .tree ul, .tree li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.tree {
+    margin: 0 0 1em;
+    text-align: center;
+}
+.tree, .tree ul {
+    display: table;
+}
+.tree ul {
+  width: 100%;
+}
+    .tree li {
+        display: table-cell;
+        padding: .5em 0;
+        vertical-align: top;
+    }
+        /* _________ */
+        .tree li:before {
+            outline: solid 1px #666;
+            content: "";
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .tree li:first-child:before {left: 50%;}
+        .tree li:last-child:before {right: 50%;}
+
+        .tree code, .tree span {
+            border: solid .1em #666;
+            border-radius: .2em;
+            display: inline-block;
+            margin: 0 .2em .5em;
+            padding: .2em .5em;
+            position: relative;
+        }
+        /* If the tree represents DOM structure */
+        .tree code {
+            font-family: monaco, Consolas, 'Lucida Console', monospace;
+        }
+
+            /* | */
+            .tree ul:before,
+            .tree code:before,
+            .tree span:before {
+                outline: solid 1px #666;
+                content: "";
+                height: .5em;
+                left: 50%;
+                position: absolute;
+            }
+            .tree ul:before {
+                top: -.5em;
+            }
+            .tree code:before,
+            .tree span:before {
+                top: -.55em;
+            }
+
+/* The root node doesn't connect upwards */
+.tree > li {margin-top: 0;}
+    .tree > li:before,
+    .tree > li:after,
+    .tree > li > code:before,
+    .tree > li > span:before {
+      outline: none;
+    }

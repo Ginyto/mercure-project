@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="assets/main.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>Efrei international</title>
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+
+</head>
+
+<body class="metalic">
+
+
+    <header>
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark " style="background-color: #000000;">
+            <div class="container-fluid">
+                <img src="assets/logo.png" alt="" width="30" height="30" style="margin-right: 10px;">
+                <a class="navbar-brand" href="acceuil.html">EFREI INTERNATIONAL</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item li-default">
+                            <a class="nav-link" aria-current="page" href="list.html">LinkTree</a>
+                        </li>
+                        <li class="nav-item dropdown li-default">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Partenaires
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item li-default" href="list.html">Canada</a></li>
+                                <li><a class="dropdown-item li-default" href="list.html">US</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="list.html">Autres</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item li-default">
+                            <a class="nav-link" href="apropos.html">À propos </a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <button class="butn RGB btn-outline-light"
+                            onclick="location.href='sign.html';">S'inscrire</button>
+                        <button class="butn RGB btn-outline-light" onclick="location.href='log.html';">Se
+                            connecter</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div
+        style="max-width: 70em; margin-right: auto; margin-left: auto; margin-top: 5em; background-color: #ffffff; padding: 50px; border-radius:25px 25px 25px 25px;">
+        <H1 style="text-align: center; color: #000000;"><b> Concordia university montreal </b></H1>
+
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets\canada_c_1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block" style="background-color : #00000050;">
+                        <h5>Student life</h5>
+                        <p>Make the most of your time at Concordia by connecting with peers and the community</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\canada_c_2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block" style="background-color : #00000050;">
+                        <h5>Montréal</h5>
+                        <p>principale ville du Québec</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\canada_c_3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block" style="background-color : #00000050;">
+                        <h5>Les chutes du Niagara</h5>
+                        <p>Les chutes du Niagara entourées d'immeubles</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+
+
+
+
+        <div id="map"> </div>
+        <script>
+            var map = L.map('map').setView([0, 0], 1);
+
+            var markerIcon = L.icon({
+                iconUrl: 'assets/marker.png',
+                iconSize: [25, 40],
+                iconAnchor: [20, 39],
+                popupAnchor: [-5, -35]
+            })
+
+            L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=ctWtKZqamWGg1iBxtHBi', {
+                attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+            }).addTo(map);
+            var marker = L.marker([45.49736112425429, -73.5792011637437], {
+                icon: markerIcon
+            }).addTo(map);
+
+            var circle = L.circle([51, 0], {
+                color: 'red',
+                fillColor: '#f03',
+                fillOpacity: 0.3,
+                radius: 500000,
+
+            }).addTo(map);
+            var polygon = L.polygon([
+                [70, 10],
+                [40, 20],
+                [30, 70]
+            ]).addTo(map);
+
+            marker.bindPopup(
+                "<b>Concordia University</b><br><a href='https://www.concordia.ca/fr.html' target=”_blank”>Concordia website</a>"
+                ).openPopup();
+        </script>
+
+
+
+
+    
+
+
+
+
+
+    </div>
+
+
+
+    <footer style="background-color: #000000">
+        <div id="apropos" style="max-width: 70em; margin-right: auto; margin-left: auto; padding: 3em;">
+            <div class="card" style="max-width: 70em; background-color: black;">
+                <div class="card-body">
+                    <h1 style=" color: #ffffff; text-align: center; padding: 1em;"><b>S'inscrire à la newsletter</b>
+                    </h1>
+
+                    <form>
+                        <div class="form-group" style="margin-bottom: 10px;">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"
+                                style="max-width: 40em; margin-left: auto; margin-right: auto; margin-bottom: 2rem;">
+                        </div>
+                        <button style="margin-left: auto; margin-right: auto;" type="submit"
+                            class="butn">S'inscrire</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <button type="button" class="hoverable collapsible float" style=" z-index: 1; width: 10%;"><i
+            class="fa fa-plus my-float">Sommaire</i></button>
+
+    <div class="float2 metalic my-list content" style="z-index: 0; ">
+        <div style="color: #ffffff; z-index: 0; padding: 1em;">
+            <h4 style="color: #ffffff;">Ma Liste</h4>
+            <ul class="nav flex-column">
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+    <script src="assets/main.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+
+
+
+
+
+
+
+
+</html>

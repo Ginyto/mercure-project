@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="assets/main.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>GAMING BIBLE</title>
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+
+</head>
+
+
+<body class="RGB">
+
+    <header>
+    
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark " style="background-color: #000000;">
+            <div class="container-fluid">
+                <img src="assets/logo.png" alt="" width="30" height="30" style="margin-right: 10px;">
+                <a class="navbar-brand" href="main.html">GAMING BIBLE</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item li-default">
+                            <a class="nav-link" aria-current="page" href="list.html">liste des jeux</a>
+                        </li>
+                        <li class="nav-item dropdown li-default">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Categories
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item li-default" href="list.html">Action</a></li>
+                                <li><a class="dropdown-item li-default" href="list.html">Platformer</a></li>
+                                <li><a class="dropdown-item li-default" href="list.html">Puzle</a></li>
+                                <li><a class="dropdown-item li-default" href="list.html">FPS</a></li>
+                                <li><a class="dropdown-item li-default" href="list.html">MOBA</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="list.html">Autres</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item li-default">
+                            <a class="nav-link" href="apropos.html">À propos </a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <button class="butn RGB btn-outline-light" onclick="location.href='sign.html';">S'inscrire</button>
+                        <button class="butn RGB btn-outline-light" onclick="location.href='log.html';">Se connecter</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div style="max-width: 70em; margin-right: auto; margin-left: auto; margin-top: 5em;">
+        <H1 style="margin-top: 3em; text-align: center; color: #ffffff;"> BIENVENUE SUR GAMING BIBLE ! </H1>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="margin: 3em; ">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://cdn.akamai.steamstatic.com/steam/apps/238960/capsule_616x353.jpg?t=1619047417"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>PATH OF EXILE</h5>
+                        <p>appuie sur tout tes boutons et ca marche :)</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://cdn.akamai.steamstatic.com/steam/apps/271590/capsule_616x353.jpg?t=1618856444"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>GTA V</h5>
+                        <p>indétronable depuis 2013</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://cdn.akamai.steamstatic.com/steam/apps/739630/capsule_616x353.jpg?t=1613740031"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>PHASMOPHOBIA</h5>
+                        <p>a gagné le prix "Best Debut game" en 2020</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="row" style="padding: 3em;">
+            <div class="col-sm">
+                <div class="card">
+                    <img src="assets/play.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Playstation</h5>
+                        <p class="card-text">Console ayant beaucoup de jeux exclusifs, souvent apprecié pour ses
+                            manettes et ses exclus</p>
+                        <a href="https://www.playstation.com/fr-fr/" target="_blank" class="btn btn-primary"
+                            style="background-color: black;">site officiel</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card">
+                    <img src="assets/switch.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Switch</h5>
+                        <p class="card-text">Une des consoles les plus portatives, ideals comme premiere console ou pour
+                            les voyages.</p>
+                        <a href="https://www.nintendo.fr/Gamme-Nintendo-Switch/Nintendo-Switch/Nintendo-Switch-1148779.html"
+                            target="_blank" class="btn btn-primary" style="background-color: black;">site officiel</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card">
+                    <img src="assets/xbox.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">X-box</h5>
+                        <p class="card-text">Avec la playstation fait partie des consoles mainstream. Souvent apprecié
+                            pour sa simplicité et sa longevité</p>
+                        <a href="https://www.xbox.com/fr-FR" target="_blank" class="btn btn-primary"
+                            style="background-color: black;">site officiel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer style="background-color: #000000">
+        <div id="apropos" style="max-width: 70em; margin-right: auto; margin-left: auto; padding: 3em;">
+            <div class="card" style="max-width: 70em; background-color: black;">
+                <div class="card-body">
+                    <h1 style=" color: #ffffff; text-align: center; padding: 1em;"><b>S'inscrire à la newsletter</b>
+                    </h1>
+
+                    <form>
+                        <div class="form-group" style="margin-bottom: 10px;">
+                            <input type="email" class="form-control" id="exampleInputEmail1"  placeholder="Email"
+                                style="max-width: 40em; margin-left: auto; margin-right: auto; margin-bottom: 2rem;">
+                        </div>
+                        <button style="margin-left: auto; margin-right: auto;" type="submit"
+                            class="butn">S'inscrire</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
