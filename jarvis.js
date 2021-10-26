@@ -9,7 +9,7 @@ const Client = new Discord.Client({
     ]
 })
 
-const prefix = "Jarvis "
+const prefix = "§"
 
 Client.on("ready", () => {
     console.log("Link Start")
@@ -22,6 +22,14 @@ Client.on("messageCreate", (message) => {
     if (message.author.bot) return;
 
     if (message.content === prefix + "start") {
-        message.channel.send("Initialing Jarvis ...");
+        message.channel.send("Décolage de la chouette ...");
+    }
+
+    if (message.content === prefix + "dit coucou") {
+			message.channel.send("Hello there!");
+    }
+    
+    if (message.content === "bot") {
+        message.channel.send("ça c'est vrai ça !")
     }
 })
