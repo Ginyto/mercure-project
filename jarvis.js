@@ -29,6 +29,12 @@ Client.on("messageCreate", (message) => {
     
 })
 
+/**
+ * Fonction qui permet d'écrire sur le channel suite a une commande
+ * @param {} message récupere le flux du channel
+ * @param {*} mot clé pour activer le bot
+ * @param {*} response message du bot souhaité
+ */
 function ecrit(message, mot, response) {
     if (message.content === prefix + mot) {
         message.channel.send(response);
