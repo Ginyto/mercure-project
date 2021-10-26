@@ -21,16 +21,17 @@ Client.login(token);
 Client.on("messageCreate", (message) => {
     if (message.author.bot) return;
 
-    if (message.content === prefix + "fly") {
-        message.channel.send("Décolage de la chouette ...");
-    }
+    ecrit(message, "fly", "Décolage de la chouette ...")
 
-    if (message.content === prefix + "dit coucou") {
-			message.channel.send("Hello there!");
-    }
+    ecrit(message, "fais moi rire", "non")
 
-    if (message.content === prefix + "fais moi rire") {
-			message.channel.send("non");
-		}
-
+    ecrit(message, "il fait beau ?", "je sais pas sort ta tete pour voir")
+    
 })
+
+function ecrit(message, mot, response) {
+    if (message.content === prefix + mot) {
+        message.channel.send(response);
+    }
+}
+
