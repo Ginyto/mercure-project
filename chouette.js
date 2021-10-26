@@ -1,5 +1,6 @@
-const Discord = require('discord.js')
+const Discord = require("discord.js")
 const token = "OTAxODgzMDkxOTU2NjkwOTc1.YXWWFQ.-MRIWawlur8I4_CXvDtIokzkAVE";
+const { SlashCommandBuilder } = require('@discordjs/builders');
 
 const Client = new Discord.Client({
     intents: [
@@ -11,7 +12,16 @@ const Client = new Discord.Client({
 
 const prefix = "§"
 
+const data = new SlashCommandBuilder()
+    .setName("test")
+    .setDescription("Ceci est un test")
+
+
+
 Client.on("ready", () => {
+
+    Client.guilds.cache.get("901917468228984884").commands.create(data);
+
     console.log("Link Start")
 })
 
@@ -21,13 +31,20 @@ Client.login(token);
 Client.on("messageCreate", (message) => {
     if (message.author.bot) return;
 
-    ecrit(message, "fly", "Décolage de la chouette ...")
+    spell.ecrit(message, "fly", "Décolage de la chouette ...")
 
     ecrit(message, "fais moi rire", "non")
 
     ecrit(message, "il fait beau ?", "je sais pas sort ta tete pour voir")
+
     
 })
+
+
+
+
+
+
 
 /**
  * Fonction qui permet d'écrire sur le channel suite a une commande
@@ -36,8 +53,10 @@ Client.on("messageCreate", (message) => {
  * @param {*} response message du bot souhaité
  */
 function ecrit(message, mot, response) {
-    if (message.content === prefix + mot) {
-        message.channel.send(response);
-    }
+	if (message.content === prefix + mot) {
+		message.channel.send(response);
+	}
 }
+
+
 
