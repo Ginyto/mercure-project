@@ -1,6 +1,7 @@
 const jarvis = {
 
 	config: require('./config.json'),
+	palabra: require('./palabra'),
 	
 
 	ecrit(message, mot, response){
@@ -17,6 +18,7 @@ const jarvis = {
 	
 	test() {
 		console.log(this.config.prefix)
+		console.log(this.palabra.punchline)
 	}
 
 }
