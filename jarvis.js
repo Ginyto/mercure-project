@@ -8,6 +8,12 @@ const jarvis = {
 			message.channel.send(response);
 		}
 	},
+
+	repond(message, mot, response) {
+		if (message.content.includes(mot)) {
+			message.channel.send(response);
+		}
+	},
 	
 	test() {
 		console.log(this.config.prefix)

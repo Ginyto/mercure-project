@@ -29,6 +29,10 @@ Client.on("messageCreate", (message) => {
     jarvis.ecrit(message, "fais moi rire", "non")
 
     jarvis.ecrit(message, "il fait beau ?", "je sais pas sort ta tete pour voir")
+
+    jarvis.repond(message, "merde", "bien fais pour toi")
+
+    jarvis.repond(message, "putain", "et toc !")
     
 })
 
