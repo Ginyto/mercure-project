@@ -26,7 +26,7 @@
 }
 
 .metalic{
-  background: linear-gradient(2deg, #00000046, hsl(216, 100%, 65%));
+  background: linear-gradient(2deg, #000000, #000000);
   background-size: 800% 800%;
   animation: AnimationName 8s ease infinite;
 }
@@ -167,7 +167,7 @@
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   max-height: 40%;
-  width: 20%;
+  width: 25%;
   text-align: center;
   overflow: auto;
 }
@@ -266,3 +266,29 @@ body {
     .tree > li > span:before {
       outline: none;
     }
+
+.checked {
+  color: #0080e9;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.zoom {
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
+  z-index: 1;
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
