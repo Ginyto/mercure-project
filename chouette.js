@@ -11,11 +11,11 @@ const Client = new Discord.Client({
 })
 
 
-jarvis.test();
 
 Client.on("ready", () => {
 
     console.log("Link Start")
+    
 })
 
 Client.login(token);
@@ -33,6 +33,8 @@ Client.on("messageCreate", (message) => {
     jarvis.repond(message, "merde", "bien fais pour toi")
 
     jarvis.repond(message, "putain", "et toc !")
+
+    jarvis.repond(message, "chouette", "c'est chouette d'être une chouette")
     
 })
 

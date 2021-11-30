@@ -18,9 +18,14 @@ const jarvis = {
 	
 	test() {
 		console.log(this.config.prefix)
-		console.log(this.palabra.punchline)
+		console.log(this.palabra.punchline[0])
+	},
+
+	aleatoire(registre) {
+		x = this.palabra.$registre
 	}
 
 }
+
 
 module.exports = jarvis
