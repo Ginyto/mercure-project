@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>Efrei international</title>
+    <link rel="icon" type="image/png" href="images/logo.png" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+
+</head>
+
+<body class="metalic">
+
+    <header>
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark " style="background-color: #000000;">
+            <div class="container-fluid">
+
+                <img src="images/logo.png" alt="" width="30" height="30" style="margin-right: 10px;">
+
+                <a class="navbar-brand" href="acceuil.html">EFREI INTERNATIONAL</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item li-default">
+                            <a class="nav-link" aria-current="page" href="list.html">LinkTree</a>
+                        </li>
+                        <li class="nav-item dropdown li-default">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Partenaires
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item li-default" href="list.html">Canada</a></li>
+                                <li><a class="dropdown-item li-default" href="list.html">US</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="list.html">Autres</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item li-default">
+                            <a class="nav-link" href="pages/apropos.html">À propos </a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <button class="butn RGB btn-outline-light"
+                            onclick="location.href='pages/sign.html';">S'inscrire</button>
+                        <button class="butn RGB btn-outline-light" onclick="location.href='pages/log.html';">Se
+                            connecter</button>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <div>
+        <div style="height: 75%;">
+            <video autoplay muted loop id="background_video" style="width: 100%; padding-top: 50px;">
+                <source src="images/travel.mp4" type="video/mp4">
+            </video>
+
+        </div>
+        
+        <div style="position: relative; top: -25%;">
+            <h1 style="color: #ffffff; text-align: center; vertical-align: middle;">Scroll<br>To<br>Explore</h1>
+        </div>
+
+
+
+        <div
+            style="max-width: 60em; margin-right: auto; margin-left: auto; margin-top: 5em; background-color: #ffffff; padding: 25px; border-radius:25px 25px 25px 25px;">
+
+
+
+
+
+            <div id="map"> </div>
+            <script>
+                var map = L.map('map').setView([0, 0], 1);
+
+                var markerIcon = L.icon({
+                    iconUrl: 'images/marker.png',
+                    iconSize: [25, 40],
+                    iconAnchor: [20, 39],
+                    popupAnchor: [-5, -35]
+                })
+
+                L.tileLayer('https://api.maptiler.com/maps/toner/{z}/{x}/{y}.png?key=XUsL1AmkUL4FXM0DB8aZ', {
+                    attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+                }).addTo(map);
+
+
+                var CA1 = L.marker([45.49736112425429, -73.5792011637437], {
+                    icon: markerIcon
+                }).addTo(map);
+
+                CA1.bindPopup(
+                    "<b>Concordia University</b><br><a href='https://www.concordia.ca/fr.html' target=”_blank”>Concordia website</a>"
+                ).closePopup();
+
+                var PO = L.marker([50.067009922364306, 19.912838009112054], {
+                    icon: markerIcon
+                }).addTo(map);
+
+                PO.bindPopup(
+                    "<b>École des mines et de la métallurgie de Cracovie</b><br><a href='https://www.concordia.ca/fr.html' target=”_blank”>Concordia website</a>"
+                ).closePopup();
+
+                var EN = L.marker([52.80694485557488, -2.120480937711014], {
+                    icon: markerIcon
+                }).addTo(map);
+
+                EN.bindPopup(
+                    "<b>Stafford College</b><br><a href='https://www.concordia.ca/fr.html' target=”_blank”>Concordia website</a>"
+                ).closePopup();
+
+                var MAL = L.marker([3.0561810596525496, 101.70068381917568], {
+                    icon: markerIcon
+                }).addTo(map);
+
+                MAL.bindPopup(
+                    "<b>Asia Pacific University of Technology & Innovation</b><br><a href='https://www.concordia.ca/fr.html' target=”_blank”>Concordia website</a>"
+                ).closePopup();
+
+                var CA2 = L.marker([51.74301859592829, -121.88081006526814], {
+                    icon: markerIcon
+                }).addTo(map);
+
+                CA2.bindPopup(
+                    "<b>International Language Academy of Canada & Innovation</b><br><a href='https://www.concordia.ca/fr.html' target=”_blank”>Concordia website</a>"
+                ).closePopup();
+
+                var US = L.marker([33.640763160958386, -117.84487555899756], {
+                    icon: markerIcon
+                }).addTo(map);
+
+                US.bindPopup(
+                    "<b>Université de Californie à Irvine</b><br><a href='https://www.concordia.ca/fr.html' target=”_blank”>Concordia website</a>"
+                ).closePopup();
+
+                map.setZoom(2);
+
+
+
+
+
+
+                /*
+                var circle = L.circle([51, 0], {
+                    color: 'red',
+                    fillColor: '#f03',
+                    fillOpacity: 0.3,
+                    radius: 500000,
+
+                }).addTo(map);
+                var polygon = L.polygon([
+                    [70, 10],
+                    [40, 20],
+                    [30, 70]
+                ]).addTo(map);
+                */
+
+            </script>
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <footer style="background-color: #000000">
+        <div id="apropos" style="max-width: 70em; margin-right: auto; margin-left: auto; padding: 3em;">
+            <div class="card" style="max-width: 70em; background-color: black;">
+                <div class="card-body">
+                    <h1 style=" color: #ffffff; text-align: center; padding: 1em;"><b>S'inscrire à la newsletter</b>
+                    </h1>
+
+                    <form>
+                        <div class="form-group" style="margin-bottom: 10px;">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"
+                                style="max-width: 40em; margin-left: auto; margin-right: auto; margin-bottom: 2rem;">
+                        </div>
+                        <button style="margin-left: auto; margin-right: auto;" type="submit"
+                            class="butn">S'inscrire</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <button type="button" class="hoverable collapsible float" style=" z-index: 1; width: 5%;"><i
+            class="fa fa-plus my-float">+</i></button>
+
+    <div class="float2 metalic my-list content" style="z-index: 0; ">
+        <div style="color: #ffffff; z-index: 0; padding: 1em;">
+            <h4 style="color: #ffffff; padding-right: 1em;">Sommaire</h4>
+            <ul class="nav flex-column">
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+    <script src="scripts/main.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+
+
+
+
+
+
+
+
+</html>
