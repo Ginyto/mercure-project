@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../styles/main.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <title>Efrei international</title>
+    <link rel="icon" type="image/png" href="../images/logo.png" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+
+</head>
+
+<body class="metalic">
+
+    <header>
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark " style="background-color: #000000;">
+            <div class="container-fluid">
+
+                <img src="../images/logo.png" alt="" width="30" height="30" style="margin-right: 10px;">
+
+                <a class="navbar-brand" href="../acceuil.html">EFREI INTERNATIONAL</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item li-default">
+                            <a class="nav-link" aria-current="page" href="list.html">LinkTree</a>
+                        </li>
+                        <li class="nav-item dropdown li-default">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Partenaires
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item li-default" href="list.html">Canada</a></li>
+                                <li><a class="dropdown-item li-default" href="list.html">US</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="list.html">Autres</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item li-default">
+                            <a class="nav-link" href="pages/apropos.html">À propos </a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <button class="butn RGB btn-outline-light"
+                            onclick="location.href='sign.html';">S'inscrire</button>
+                        <button class="butn RGB btn-outline-light" onclick="location.href='log.html';">Se
+                            connecter</button>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    
+
+    <div>
+        <div
+            style="max-width: 80em; margin-right: auto; margin-left: auto; margin-top: 5em; background-color: #ffffff; padding: 25px; border-radius:25px 25px 25px 25px;">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../images/Malaisie/beste-reistijd.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/Malaisie/travel-to-kuala-lumpur.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/Malaisie/Batu-cave.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <div class="container sticky" style="margin-top: 30px;">
+                <div class="row">
+                    <div class="col">
+                        <h1><b>Universite concordia</b></h1>
+                    </div>
+                    <div class="col-md-auto">
+                        <div style="padding: 5px">
+                            <img style="max-width: 80px; max-height: 30px;"
+                                src="https://cdn-icons-png.flaticon.com/512/330/330442.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-auto">
+                        <h3><b>kuala lumpur</b></h3>
+                    </div>
+                    <div class="col col-lg-2">
+                        <div style="padding:7px ">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        
+
+        <div
+            style="max-width: 80em; margin-right: auto; margin-left: auto; margin-top: 5em; background-color: #ffffff; padding-top: 25px; border-radius:25px 25px 25px 25px;">
+
+
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="container">
+                            <div class="card-columns">
+                                <div class="card zoom">
+                                    <img class="card-img-top" src="../images/test.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <p class="card-text">Welcome to Kuala Lumpu Capital of Malaisia.</p>
+                                    </div>
+                                </div>
+                                <div class="card zoom">
+                                    <img class="card-img-top" src="../images/Malaisie/Batu-cave.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <p class="card-text">Les jardins botaniques de Perdana sont plus connus sous leur ancien nom de «jardins du lac».
+                                        Situés en bordure de la ville c’est l’un des parcs les plus anciens et les plus appréciés de Kuala Lumpur.
+                                        A l’époque coloniale, c’est ici que l’élite britannique bâtissait ses élégantes demeures.
+                                        Si vous avez le temps et quelques jours devant vous n’hésitez pas à profiter du lac et de la végétation luxuriante</p>
+                                    </div>
+            
+                                </div>
+                                <div class="card zoom">
+                                    <img class="card-img-top" src="../images/Malaisie/LITTLE-INDIA.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <p class="card-text">Le quartier de Little India s’étire autour de Masjid India, impressionnante mosquée en marbre.
+                                        Little India vit au rythme de la minorité indienne. On y trouve beaucoup de marchands musulmans et hindous.</p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                      <li class="list-group-item">Cras justo odio</li>
+                                      <li class="list-group-item">Dapibus ac facilisis in</li>
+                                      <li class="list-group-item">Vestibulum at eros</li>
+                                    </ul>
+                                    <div class="card-body">
+                                      <a href="#" class="card-link">Card link</a>
+                                      <a href="#" class="card-link">Another link</a>
+                                    </div>
+                                  </div>
+                                <div class="card zoom">
+                                    <img class="card-img-top" src="../images/Malaisie/CHINATOWN.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <p class="card-text">Chinatonw est basé sur la rue Petaling qui est également connu sous le nom de «Chee Cheong Kai», une référence à ses racines en tant que district producteur de tiapioca.
+                                        Situé au cœur de Kuala Lumpur ce quartier est coloré et très animé surtout la nuit.
+                                        C’est également un endroit idéal pour acheter des souvenirs et pour les chasseurs de bonnes affaires.
+                                        PS: N’hésitez pas à négocier les prix..</p>
+                                    </div>
+                                </div>
+                                <div class="card zoom">
+                                    <img class="card-img-top" src="../images/Malaisie/vacced.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <p class="card-text">Comme pour chaque pays il est également conseillé d’être à jour avec ses vaccins.
+                                        Il est conseillé de se vacciner contre la rage, le paludisme et l’hépatite A.</p>
+                                    </div>
+            
+                                </div>
+                                <div class="card zoom">
+                                    <img class="card-img-top" src="../images/Malaisie/aero-gar-capital.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <p class="card-text">Pour rejoindre Kuala Lumpur depuis l’aéroport, il suffit de prendre le train KLIA express qui mène jusqu’à KL Sentral (gare centrale de Kuala Lumpur).
+                                        Il y a également le taxi : Il y a des prix fixés directement à l’aéroport (guichet taxi) et payable avant de monter, ce qui évite des surprises.
+                                        Ou d’autres taxis à la sortie de l’aéroport qui propose de faire le trajet jusqu’au centre de Kuala Lumpur.</p>
+                                    </div>
+            
+                                </div>
+                                <div class="card zoom">
+                                    <img class="card-img-top" src="../images/old_monreal.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <p class="card-text">Old Montréal is tourist central in Montréal. The area is home to a remarkable concentration of buildings dating from the 17th, 18th, and 19th centuries.</p>
+                                    </div>
+                                </div>
+                                
+                                
+                                
+                              </div>
+            
+                        </div>
+                    </div>
+
+
+
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col" style="padding-bottom: 50px; ;">
+
+                        <div id="map"> </div>
+                        <script>
+                            var map = L.map('map').setView([45, -73], 1);
+
+                            var markerIcon = L.icon({
+                                iconUrl: '../images/marker.png',
+                                iconSize: [25, 40],
+                                iconAnchor: [20, 39],
+                                popupAnchor: [-5, -35]
+                            })
+
+                            L.tileLayer(
+                                'https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=XUsL1AmkUL4FXM0DB8aZ', {
+                                    attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+                                }).addTo(map);
+
+                            map.setZoom(4);
+
+                            var CA1 = L.marker([45.49736112425429, -73.5792011637437], {
+                                icon: markerIcon
+                            }).addTo(map);
+
+                            CA1.bindPopup(
+                                "<b>Concordia University</b><br><a href='https://www.concordia.ca/fr.html' target=”_blank”>Concordia website</a>"
+                            ).closePopup();
+
+                            /*
+                        var circle = L.circle([51, 0], {
+                            color: 'red',
+                            fillColor: '#f03',
+                            fillOpacity: 0.3,
+                            radius: 500000,
+        
+                        }).addTo(map);
+                        var polygon = L.polygon([
+                            [70, 10],
+                            [40, 20],
+                            [30, 70]
+                        ]).addTo(map);
+                        */
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <footer style="background-color: #000000">
+        <div id="apropos" style="max-width: 70em; margin-right: auto; margin-left: auto; padding: 3em;">
+            <div class="card" style="max-width: 70em; background-color: black;">
+                <div class="card-body">
+                    <h1 style=" color: #ffffff; text-align: center; padding: 1em;"><b>S'inscrire à la newsletter</b>
+                    </h1>
+
+                    <form>
+                        <div class="form-group" style="margin-bottom: 10px;">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"
+                                style="max-width: 40em; margin-left: auto; margin-right: auto; margin-bottom: 2rem;">
+                        </div>
+                        <button style="margin-left: auto; margin-right: auto;" type="submit"
+                            class="butn">S'inscrire</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <button type="button" class="hoverable collapsible float" style=" z-index: 1; width: 5%;"><i
+            class="fa fa-plus my-float">+</i></button>
+
+    <div class="float2 metalic my-list content" style="z-index: 0; ">
+        <div style="color: #ffffff; z-index: 0; padding: 1em;">
+            <h4 style="color: #ffffff; padding-right: 1em;">Sommaire</h4>
+            <ul class="nav flex-column">
+
+        </div>
+    </div>
+
+
+
+
+
+    <script src="../scripts/main.js"></script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+
+
+
+
+
+
+
+
+</html>
