@@ -1,7 +1,7 @@
 function lecture() {
-    fetch("../bdd.json")
-        .then(res => res.json())
-        .then(bdd => console.log(bdd))
+    const bdd = require("../bdd.json");
+
+    console.log(bdd.ginyto)
 }
 
 lecture()
