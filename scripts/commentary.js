@@ -1,17 +1,9 @@
 console.log("Hello there")
 
-function lecture() {
-    fetch("../bdd.json")
-			.then((response) => response.json())
-			.then((data) => {
-				bdd = data;
-                return data;
-            });
-}
-
-bdd = lecture()
+var bdd = require('../bdd.json')
 
 console.log(bdd)
+
 
 
 
