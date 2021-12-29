@@ -292,3 +292,23 @@ div.sticky {
   top: 0;
   z-index: 2;
 }
+
+div.commentary{
+  background-color: blue;
+  padding-top: 100px;
+  margin-top: 100px;
+  margin-left: 70px;
+  margin-right: 70px;
+  
+  border-radius: 25px;
+
+  display: flex;
+
+  justify-content: center;
+  
+}
+
+div.espace{
+  background-color: yellow;
+  display: flex;
+}
