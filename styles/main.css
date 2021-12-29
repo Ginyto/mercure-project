@@ -311,4 +311,5 @@ div.commentary{
 div.espace{
   background-color: yellow;
   display: flex;
+  flex-direction: column;
 }

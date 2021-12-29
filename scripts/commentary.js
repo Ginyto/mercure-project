@@ -1,15 +1,11 @@
 var bdd = require('../bdd.json')
 var fs = require('fs')
 
-var json = '{"montreal": ["coco"]}'
-
-
 
 function majbdd() {
-    fs.writeFileSync("bdd.json", JSON.stringify(bdd))
+    bdd = json
+    fs.writeFileSync("bdd.json", bdd)
 }
-
-majbdd()
 
 
 function getvalue() {
@@ -18,16 +14,17 @@ function getvalue() {
 }
 
 function test() {
-    x = getvalue();
-    console.log("voici la valeur de x : " + x);
+    x = JSON.stringify(bdd)
     addcomment(x)
 }
 
 function addcomment(param) {
     var espace = document.getElementById("espace")
     var com = document.createElement("p")
-    com.textContent = param
+    com.id = "com"
+    com.textContent = param 
     espace.appendChild(com)
+
 }
 
 
