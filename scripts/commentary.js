@@ -1,5 +1,17 @@
 console.log("Hello there")
 
-fetch("../bdd.json")
-	.then((response) =>  response.json())
-    .then((data) => JSON.stringify(data))
+function lecture() {
+    fetch("../bdd.json")
+			.then((response) => response.json())
+			.then((data) => {
+				bdd = data;
+                return data;
+            });
+}
+
+bdd = lecture()
+
+console.log(bdd)
+
+
+
