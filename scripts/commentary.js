@@ -1,6 +1,7 @@
 var bdd = require('../bdd.json')
 var fs = require('fs')
 
+var json = '{"montreal": ["coco"]}'
 
 
 
