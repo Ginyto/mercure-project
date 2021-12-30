@@ -12,14 +12,26 @@ const dico = {
         console.log(pays)
     },
 
-    addnewcom(tab) {
+    addnewcom(text) {
         var com = document.createElement("div")
         com.className = "com"
-        tab.push(document.getElementById("comment").value);
+        com.textContent = text
+        document.getElementById("note").appendChild(com);
         this.showcom(this.montreal)
-        this.upload()
-        com.textContent = document.getElementById("comment").value;
-        document.getElementById("note").appendChild(com)
+    },
+
+    saisiecom(tab) {
+        text = document.getElementById("comment").value;
+        this.addnewcom(text)
+
+        tab.push(text);
+        this.upload();
+    },
+
+    loadcom(tab) {
+        for (let index = 0; index < tab.length; index++) {
+            this.addnewcom(tab[index])
+        }
     },
 
 
