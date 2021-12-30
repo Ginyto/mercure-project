@@ -1,6 +1,6 @@
 const dico = {
     
-    montreal: ["Gianlucca", "Fanny"],
+    montreal: [],
     cracovie: [],
     malaisie: [],
     usa: [],
