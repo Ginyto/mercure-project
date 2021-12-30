@@ -313,7 +313,7 @@ div.commentary{
 }
 
 div.note {
-  background-color: pink;
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -326,23 +326,23 @@ div.note {
 }
 
 div.com {
-  background-color: green;
   border-radius: 25px;
+  box-sizing: content-box;
   width: 1280px;
-  height: 60px;
+  height: 30px;
   display: flex;
   justify-content: center;
-  padding-top: 3px;
+
+  border: solid 1px black;
   
 }
 
 div.saisie{
   display: flex;
-  background-color: blue;
+  background-color: white;
   border-radius: 25px;
   box-sizing: content-box;
   width: 100%;
-  height: 30%;
   justify-content: space-around;
   
 }
