@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../styles/main.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <title>Efrei international</title>
+    <link rel="icon" type="image/png" href="../images/logo.png" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+
+</head>
+
+<body class="metalic">
+
+    <header>
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark " style="background-color: #000000;">
+            <div class="container-fluid">
+
+                <img src="../images/logo.png" alt="" width="30" height="30" style="margin-right: 10px;">
+
+                <a class="navbar-brand" href="../accueil.html">EFREI INTERNATIONAL</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown li-default">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Destinations
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item li-default" href="../pages/vancouver.html">
+                                        <div class="row">
+                                            <div class="col-3"><img src="../images/flags/canada.png" alt="Generic placeholder image" style="max-width: 30px;"></div>
+                                            <div class="col-9">Vancouver</div>
+                                          </div></a>
+                                </li>
+                                <li><a class="dropdown-item li-default" href="../pages/montreal.html">
+                                    <div class="row">
+                                        <div class="col-3"><img src="../images/flags/quebec.png" alt="Generic placeholder image" style="max-width: 30px;"></div>
+                                        <div class="col-9">Montreal</div>
+                                      </div></a>
+                                </li>
+                                <li><a class="dropdown-item li-default" href="../pages/USA.html">
+                                    <div class="row">
+                                        <div class="col-3"><img src="../images/flags/usa.png" alt="Generic placeholder image" style="max-width: 30px;"></div>
+                                        <div class="col-9">USA</div>
+                                      </div></a>
+                                </li>
+                                <li><a class="dropdown-item li-default" href="../pages/Malaisie.html">
+                                    <div class="row">
+                                        <div class="col-3"><img src="../images/flags/malaysia.png" alt="Generic placeholder image" style="max-width: 30px;"></div>
+                                        <div class="col-9">Malaisie</div>
+                                      </div></a>
+                                </li>
+                                <li><a class="dropdown-item li-default" href="../pages/Stoke-On-Trent.html">
+                                    <div class="row">
+                                        <div class="col-3"><img src="../images/flags/uk.png" alt="Generic placeholder image" style="max-width: 30px;"></div>
+                                        <div class="col-9">Angleterre</div>
+                                      </div></a>
+                                </li>
+                                <li><a class="dropdown-item li-default" href="../pages/cracovie.html">
+                                    <div class="row">
+                                        <div class="col-3"><img src="../images/flags/poland.png" alt="Generic placeholder image" style="max-width: 30px;"></div>
+                                        <div class="col-9">Pologne</div>
+                                      </div></a>
+                                </li>
+                                          
+                            </ul>
+                        </li>
+                        <li class="nav-item li-default">
+                            <a class="nav-link disabled" href="apropos.html">À propos </a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <button class="butn RGB btn-outline-light"
+                            onclick="location.href='sign.html';">S'inscrire</button>
+                        <button class="butn RGB btn-outline-light" onclick="location.href='log.html';">Se
+                            connecter</button>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    
+
+    <div>       
+
+        <div
+            style="max-width: 80em; margin-right: auto; margin-left: auto; margin-top: 5em; background-color: #ffffff; padding-top: 25px; border-radius:25px 25px 25px 25px;">
+
+            <section class=" text-center" style="padding: 3%;">
+                <div class="container">
+                  <h1 class="jumbotron-heading">Team</h1>
+                  <p class="lead text-muted">Nous sommes une équipe de 6 étudiants en L3 dotés d'imagination et d'ambition.</p>
+                  
+                </div>
+            </section>
+
+            <div class="bg-light">
+                <div class="container">
+        
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 100%; width: 100%; display: block;" src="../images/profils/profil_Lisa.jpg" data-holder-rendered="true">
+                        <div class="card-body">
+                          <h4 class="card-text" style="text-align: center;"><b>Raoul Lisa</b></h4>
+                          <p style="text-align: center;">Responsable backend et informations sur les différents destinations.</p>
+                          <p style="text-align: center;"><b>lisa.raoul@efrei.net</b></p>
+                          <div class="d-flex justify-content-between align-items-center">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 100%; width: 100%; display: block;" src="../images/profils/profil_Gabriel.jpg" data-holder-rendered="true">
+                        <div class="card-body">
+                            <h4 class="card-text" style="text-align: center;"><b>Gabriel Fraccaro</b></h4>
+                            <p style="text-align: center;">Chef d'équipe responsable de la cohésion et du respect des contraintes et des délais.</p>
+                            <p style="text-align: center;"><b>gabriel.fraccaro@efrei.net</b></p>
+                          <div class="d-flex justify-content-between align-items-center">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 100%; width: 100%; display: block;" src="../images/profils/profil_Sylvain.PNG" data-holder-rendered="true">
+                        <div class="card-body">
+                            <h4 class="card-text" style="text-align: center;"><b>Varlot Sylvain</b></h4>
+                            <p style="text-align: center;">Responsable de la documentation et de la recherche bibliographique des informations présenté sur le site.</p>
+                            <p style="text-align: center;"><b>sylvain.varlot@efrei.net</b></p>
+                          <div class="d-flex justify-content-between align-items-center">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+        
+                    <div class="col-md-4">
+                      <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 100%; width: 100%; display: block;" src="../images/profils/profil_Ayman.jpg" data-holder-rendered="true">
+                        <div class="card-body">
+                            <h4 class="card-text" style="text-align: center;"><b>Ben Hajjaj Ayman</b></h4>
+                            <p style="text-align: center;">Responsable frontend conception du squelette et des menus html.</p>
+                            <p style="text-align: center;"><b>ayman.ben.hajjaj@efrei.net</b></p>
+                          <div class="d-flex justify-content-between align-items-center">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 100%; width: 100%; display: block;" src="../images/profils/profil_Thibaud.png" data-holder-rendered="true">
+                        <div class="card-body">
+                            <h4 class="card-text" style="text-align: center;"><b>Dandoy Thibaud</b></h4>
+                            <p style="text-align: center;">Responsable du design et conception des logos du site.</p>
+                            <p style="text-align: center;"><b>thibaud.dandoy@efrei.net</b></p>
+                          <div class="d-flex justify-content-between align-items-center">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 100%; width: 100%; display: block;" src="../images/profils/profil_Gianlucca.jpg" data-holder-rendered="true">
+                        <div class="card-body">
+                            <h4 class="card-text" style="text-align: center;"><b>Annichiarico Gianluca</b></h4>
+                            <p style="text-align: center;">Responsable du  backend BDD et Github pour mise en commun du travail.</p>
+                            <p style="text-align: center;"><b>gianlucca.annichiarico@efrei.net</b></p>
+                          <div class="d-flex justify-content-between align-items-center">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <section class=" text-center" style="padding: 10%;">
+                        <div class="container">
+                          <h1 class="jumbotron-heading">Notre projet</h1>
+                          <p class="lead text-muted">Notre projet c'est un site vous permettant d'avoir un maximum d'informations sur diverses destinations. On a Cracovie, Malaisie, Montreal, Stoke On trent, USA, Vancouver. <br> Cela vous permettra d'être le mieux informé avant votre départ. Quels papiers dois-je avoir ? Où vais-je suivre mes cours ? Que puis-je visiter ?</p>
+                          
+                        </div>
+                    </section>
+        
+                        
+                        
+      
+      
+      
+      
+          
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <footer style="background-color: #000000">
+        <div id="apropos" style="max-width: 70em; margin-right: auto; margin-left: auto; padding: 3em;">
+            <div class="card" style="max-width: 70em; background-color: black;">
+                <div class="card-body">
+                    <h1 style=" color: #ffffff; text-align: center; padding: 1em;"><b>S'inscrire à la newsletter</b>
+                    </h1>
+
+                    <form>
+                        <div class="form-group" style="margin-bottom: 10px;">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"
+                                style="max-width: 40em; margin-left: auto; margin-right: auto; margin-bottom: 2rem;">
+                        </div>
+                        <button style="margin-left: auto; margin-right: auto;" type="submit"
+                            class="butn">S'inscrire</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="../scripts/main.js"></script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+
+
+</html>
