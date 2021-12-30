@@ -15,19 +15,37 @@ const dico = {
     addnewcom(tab) {
         tab.push(document.getElementById("comment").value)
         this.showcom()
-        localStorage.setItem("dico", JSON.stringify(this))
+        this.upload()
+        
         
     },
 
-    test(x) {
-        if (x == 0) {
-            localStorage.clear()
-            alert("localstorage vide")
-        }
+
+    upload(){
+        localStorage.setItem("dico", JSON.stringify(this));
+    },
+
+    download() {
+        alignement = JSON.parse(localStorage.getItem("dico"));
         
-        x = JSON.parse(localStorage.getItem("dico"));
-        console.log("voici le cloud de : "+x.montreal)
+        this.montreal = alignement.montreal
+        this.cracovie = alignement.cracovie
+        this.malaisie = alignement.malaisie
+        this.usa = alignement.usa
+        this.vancouver = alignement.vancouver
+        this.sot = alignement.sot
+
+        console.log(alignement.montreal);
+
+    },
+
+    clear() {
+        localStorage.clear();
+				alert("local storage vide");
+    },
+
+    test() {
+        this.download()
+        this.showcom()
     }
 }
-
-console.log("voici la source local de : "+dico.montreal)
