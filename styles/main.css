@@ -294,7 +294,7 @@ div.sticky {
 }
 
 div.commentary{
-  background-color: blue;
+  background-color: white;
   box-sizing: content-box;
 
   margin-top: 50px;
@@ -315,7 +315,7 @@ div.commentary{
 }
 
 div.note {
-  background-color: pink;
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -328,7 +328,7 @@ div.note {
 }
 
 div.com {
-  background-color: cyan;
+  background-color: white;
   border-radius: 25px;
   width: 1280px;
   height: 60px;
@@ -338,10 +338,8 @@ div.com {
   
 }
 
-
-
 div.saisie{
-  background-color: yellow;
+  background-color: white;
   border-radius: 25px;
   box-sizing: content-box;
   width: 100%;
