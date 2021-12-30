@@ -8,16 +8,18 @@ const dico = {
     sot: [],
 
 
-    showcom() {
-        console.log(this.montreal)
+    showcom(pays) {
+        console.log(pays)
     },
 
     addnewcom(tab) {
-        tab.push(document.getElementById("comment").value)
-        this.showcom()
+        var com = document.createElement("div")
+        com.className = "com"
+        tab.push(document.getElementById("comment").value);
+        this.showcom(this.montreal)
         this.upload()
-        
-        
+        com.textContent = document.getElementById("comment").value;
+        document.getElementById("note").appendChild(com)
     },
 
 
@@ -36,7 +38,6 @@ const dico = {
         this.sot = alignement.sot
 
         console.log(alignement.montreal);
-
     },
 
     clear() {
@@ -46,6 +47,6 @@ const dico = {
 
     test() {
         this.download()
-        this.showcom()
+        this.showcom(this.montreal)
     }
 }
