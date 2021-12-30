@@ -292,3 +292,57 @@ div.sticky {
   top: 0;
   z-index: 2;
 }
+
+div.commentary{
+  background-color: white;
+  box-sizing: content-box;
+
+  margin-top: 50px;
+
+  margin-left: 70px;
+
+  width: 1280px;
+  height: 300px;
+  
+  border-radius: 25px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+div.note {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  box-sizing: content-box;
+  width: 100%;
+  height: 70%;
+  
+}
+
+div.com {
+  background-color: white;
+  border-radius: 25px;
+  width: 1280px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  padding-top: 3px;
+  
+}
+
+div.saisie{
+  background-color: white;
+  border-radius: 25px;
+  box-sizing: content-box;
+  width: 100%;
+  height: 30%;
+  
+}

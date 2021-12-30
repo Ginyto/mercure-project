@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <link rel="stylesheet" href="../styles/main.css">
@@ -345,6 +345,23 @@
         </div>
     </div>
 
+    <div class="commentary" id="commentary">
+
+        <div id="note">
+                
+        </div>
+
+        <div class="saisie" id="saisie">
+            <input type="text" placeholder="Entrer votre commentaire" id="comment">
+            <button type="submit" id="commentary-submit" onclick="dico.saisiecom(dico.montreal)"> Commenter </button>
+            <button type="submit" id="commentary-submit" onclick="dico.test()"> test </button>
+            <button type="submit" id="commentary-submit" onclick="dico.clear()"> clear </button>
+            <button type="submit" id="commentary-submit" onclick="dico.loadcom(dico.montreal)"> charger les coms </button>
+        </div>
+
+        
+    </div>
+
 
 
 
@@ -374,6 +391,7 @@
 
 
     <script src="../scripts/main.js"></script>
+    <script src="../scripts/commentary.js"></script>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
