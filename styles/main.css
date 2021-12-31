@@ -294,7 +294,7 @@ div.sticky {
 }
 
 div.commentary{
-  background-color: white;
+  background-color: pink;
   box-sizing: content-box;
 
   margin-top: 50px;
@@ -313,7 +313,7 @@ div.commentary{
 }
 
 div.note {
-  background-color: white;
+  background-color: cyan;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -322,6 +322,8 @@ div.note {
   box-sizing: content-box;
   width: 100%;
   height: 70%;
+
+  justify-content: space-between
   
 }
 
@@ -339,12 +341,18 @@ div.com {
 
 div.saisie{
   display: flex;
-  background-color: white;
+  background-color: greenyellow;
   border-radius: 25px;
   box-sizing: content-box;
   width: 100%;
+  height: 100px;
   justify-content: space-around;
-  
+  align-self: end;
+  flex-direction: column;
+}
+
+button.commentary-submit{
+  width: 100px
 }
 
 div.flexzone {

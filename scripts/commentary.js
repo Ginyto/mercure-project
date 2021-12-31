@@ -87,5 +87,13 @@ const dico = {
             return alert("Erreur 404")
         }
     
+    },
+
+    grimoire() {
+        secret = document.getElementById("exampleInputEmail1").value;
+        
+        if (secret == "clear") {
+            this.clear();
+        }
     }
 }

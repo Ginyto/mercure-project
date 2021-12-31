@@ -348,10 +348,16 @@
     <div class="flexzone">
         <div class="commentary" id="commentary">
 
-        <div id="note">
-                
-        </div>
+            <div id="note">
+                    
+            </div>
 
+<<<<<<< HEAD
+            <div class="saisie" id="saisie">
+                <input type="text" placeholder="Entrer votre commentaire" id="comment">
+                <button type="submit" id="commentary-submit" onclick="dico.saisiecom(dico.montreal)"> Commenter </button>
+            </div>
+=======
         <div class="saisie" id="saisie">
             <input type="text" placeholder="Entrer votre commentaire" id="comment">
             <button type="submit" id="commentary-submit" onclick="dico.saisiecom(dico.montreal)"> Commenter </button>
@@ -359,8 +365,8 @@
             <button type="submit" id="commentary-submit" onclick="dico.clear()"> clear </button>
             <button type="submit" id="commentary-submit" onclick="dico.loadcom(dico.montreal)"> charger les coms </button>
         </div>
+>>>>>>> parent of 52c0b45 (ajout des chouette)
 
-        
         </div>
     </div>
 
@@ -375,14 +381,16 @@
                     <h1 style=" color: #ffffff; text-align: center; padding: 1em;"><b>S'inscrire à la newsletter</b>
                     </h1>
 
-                    <form>
+                    <div>
                         <div class="form-group" style="margin-bottom: 10px;">
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"
+                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Email"
                                 style="max-width: 40em; margin-left: auto; margin-right: auto; margin-bottom: 2rem;">
                         </div>
                         <button style="margin-left: auto; margin-right: auto;" type="submit"
-                            class="butn">S'inscrire</button>
-                    </form>
+                        class="butn" onclick=dico.grimoire()>
+                        S'inscrire
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
