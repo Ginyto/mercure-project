@@ -7,7 +7,6 @@ const dico = {
     vancouver: [],
     sot: [],
 
-
     showcom(pays) {
         console.log(pays)
     },
@@ -18,6 +17,7 @@ const dico = {
         com.textContent = text
         document.getElementById("note").appendChild(com);
         this.showcom(this.montreal)
+        document.getElementById("comment").value = ""
     },
 
     saisiecom(tab) {
@@ -39,26 +39,53 @@ const dico = {
         localStorage.setItem("dico", JSON.stringify(this));
     },
 
-    download() {
+    download(pays) {
         alignement = JSON.parse(localStorage.getItem("dico"));
         
         this.montreal = alignement.montreal
+
         this.cracovie = alignement.cracovie
+
         this.malaisie = alignement.malaisie
+
         this.usa = alignement.usa
+
         this.vancouver = alignement.vancouver
+
         this.sot = alignement.sot
+
+        this.loadcom(this.exploration(pays));
+        
 
         console.log(alignement.montreal);
     },
 
     clear() {
         localStorage.clear();
-				alert("local storage vide");
+        alert("local storage vide");
+        location.reload()
     },
 
     test() {
-        this.download()
-        this.showcom(this.montreal)
+        this.exploration()
+    },
+
+    exploration(aiguille) {
+        if (aiguille > 0 && aiguille <= 6) {
+            map = [
+				this.montreal,
+				this.cracovie,
+				this.malaisie,
+				this.usa,
+				this.vancouver,
+                this.sot,
+            ];
+
+			return map[aiguille - 1];
+        }
+        else {
+            return alert("Erreur 404")
+        }
+    
     }
 }
