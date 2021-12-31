@@ -12,12 +12,15 @@ const dico = {
     },
 
     addnewcom(text) {
-        var com = document.createElement("div")
-        com.className = "com"
-        com.textContent = text
-        document.getElementById("note").appendChild(com);
-        this.showcom(this.montreal)
-        document.getElementById("comment").value = ""
+        if (text != "") {
+            var com = document.createElement("div");
+			com.className = "com";
+			com.textContent = text;
+			document.getElementById("note").appendChild(com);
+			this.showcom(this.montreal);
+			document.getElementById("comment").value = "";
+        }
+        else{alert("Please enter a comment")}
     },
 
     saisiecom(tab) {
